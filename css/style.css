@@ -1,0 +1,520 @@
+@import url(./fonts.css);
+
+/* CUSTOM CSS */
+:root {
+  /* COLORS */
+  --primary-light-coral-color: #f67e7e;
+  --primary-midnight-green: #014e56;
+  --primary-white-color: #ffffff;
+
+  --secondary-Rapture-Blue: #79c8c7;
+  --secondary-Police-Blue: #2c6269;
+  --secondary-Deep-Jungle-Green: #004047;
+  --secondary-Sacramento-State-Green: #012f34;
+  --secondary-Dark-Green: #002529;
+
+  /* FONTS */
+  --main-font-family: "Livvic", "Arial", sans-serif;
+
+  /* FONT-SIZE */
+  --h1-large-size: 10rem;
+  --h1-large-line: 1;
+
+  --h1-small-size: 6.4rem;
+  --h1-small-line: 0.88;
+
+  --h2-size: 4.8rem;
+  --h2-line: 1;
+
+  --h3-size: 1.8rem;
+  --h3-line: 1.56;
+
+  --main-font-size-1: 1.8rem;
+  --main-line-height-1: 1.56;
+
+  --main-font-size-2: 1.5rem;
+  --main-line-height-2: 1.67;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: 2px dotted var(--primary-light-coral-color);
+  outline-offset: 4px;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  font-size: 62.5%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: var(--main-font-family);
+  font-size: var(--main-font-size-2);
+  line-height: var(--main-line-height-2);
+  background-color: var(--primary-midnight-green);
+  color: var(--primary-white-color);
+  font-weight: 600;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-primary {
+  color: var(--primary-light-coral-color);
+}
+
+.btn {
+  padding: 0.9rem 3.3rem 1.1rem 3.2rem;
+  border: 2px solid transparent;
+  border-radius: 24px;
+  font-size: var(--main-font-size-1);
+  line-height: normal;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn-light {
+  color: var(--primary-white-color);
+  border-color: var(--primary-white-color);
+}
+
+.btn-light:hover {
+  background-color: var(--primary-white-color);
+  color: var(--secondary-Dark-Green);
+}
+
+/* HEADER */
+
+.header {
+  padding: 7.3rem 0;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.site-logo {
+  margin-right: 8rem;
+}
+
+.site-logo:hover {
+  opacity: 0.8;
+}
+
+.site-logo:active {
+  opacity: 0.6;
+}
+
+.site-logo__image {
+  width: 160px;
+  height: 40px;
+}
+
+.header__inner-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.sitenav {
+  margin-right: auto;
+}
+
+.sitenav__list {
+  display: flex;
+}
+
+.sitenav__item:not(:last-child) {
+  margin-right: 4rem;
+}
+
+.sitenav__link {
+  color: var(--primary-white-color);
+}
+
+.sitenav__link:hover {
+  color: var(--primary-light-coral-color);
+}
+
+.header__toggle-btn {
+  background-color: transparent;
+  border: 0;
+  display: block;
+  margin-left: auto;
+  display: none;
+}
+
+.header__toggle-btn__image {
+}
+
+.header__inner-wrapper-btn {
+  background-color: transparent;
+  border: 0;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 3.9rem;
+  display: none;
+}
+
+.header__inner-wrapper-img {
+}
+
+/* MAIN */
+.main {
+  flex-grow: 1;
+}
+
+.hero {
+  padding-top: 5.6rem;
+  padding-bottom: 25rem;
+  background-image: url(../images/svg/hero\ left\ bg.svg),
+    url(../images/svg/hero\ bottom\ bg.svg);
+  background-repeat: no-repeat;
+  background-position: left -100px top 110px, right 140px bottom -100px;
+}
+
+.hero__container {
+  display: flex;
+  align-items: center;
+}
+
+.hero__title-wrapper {
+  width: 635px;
+}
+
+.hero__title {
+  font-size: var(--h1-large-size);
+  line-height: var(--h1-large-line);
+}
+
+.hero__info {
+  width: 445px;
+}
+
+.hero__divider {
+  margin-bottom: 7.9rem;
+  background-color: var(--secondary-Rapture-Blue);
+}
+
+.site-divider {
+  width: 50px;
+  height: 4px;
+  border: 0;
+}
+
+.hero__description {
+  font-size: var(--main-font-size-1);
+  line-height: var(--main-line-height-1);
+}
+/* HERO END */
+
+/* FEATURES START */
+.features {
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+  background-color: var(--secondary-Sacramento-State-Green);
+  background-image: url(../images/svg/features-bottom-bg.svg);
+  background-position: bottom right -100px;
+  background-repeat: no-repeat;
+}
+
+.features__container {
+  display: flex;
+}
+
+.features__info {
+  width: 100%;
+  max-width: 445px;
+  margin-right: 12.5rem;
+}
+
+.features__divider {
+  background-color: var(--primary-light-coral-color);
+  margin-bottom: 5.4rem;
+}
+
+.features__title {
+  font-size: var(--h2-size);
+  line-height: var(--h2-line);
+}
+
+.features__items {
+  margin-top: 5.4rem;
+}
+
+.features__list {
+}
+
+.features__item {
+  display: flex;
+}
+
+.features__item:not(:last-child) {
+  margin-bottom: 3.2rem;
+}
+
+.features__image {
+  margin-right: 2.3rem;
+  width: 72px;
+  height: 72px;
+}
+
+.features__item-info {
+}
+
+.features__info-title {
+  color: var(--primary-light-coral-color);
+  margin-bottom: 1.6rem;
+  font-size: var(--h3-size);
+  line-height: var(--h3-line);
+}
+
+.features__description {
+  font-size: var(--main-font-size-2);
+  line-height: var(--main-line-height-2);
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+/* FEATURES END */
+
+/* FOOTER */
+
+/* MEDIA */
+
+@media screen and (max-width: 993px) {
+  .hero {
+    padding-top: 4.8rem;
+    padding-bottom: 25.6rem;
+    background-image: url(../images/svg/hero\ bottom\ bg.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom -100px;
+  }
+
+  .hero__container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero__title-wrapper {
+    width: 100%;
+    max-width: 635px;
+  }
+
+  .hero__title {
+    font-size: var(--h1-small-size);
+    line-height: var(--h1-small-line);
+  }
+
+  .hero__info {
+    width: 100%;
+    max-width: 447px;
+  }
+
+  .hero__divider {
+    display: none;
+  }
+
+  /* FEATURES */
+  .features {
+    padding-left: 9.7rem;
+    padding-right: 9.8rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-color: var(--secondary-Sacramento-State-Green);
+    background-image: url(../images/svg/features-bottom-bg.svg);
+    background-position: top right -100px;
+    background-repeat: no-repeat;
+  }
+
+  .features__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .features__title {
+    font-size: 3.2rem;
+    line-height: 1;
+  }
+
+  .features__items {
+    margin-top: 6.4rem;
+    padding-left: 9.7rem;
+    padding-right: 9.8rem;
+  }
+
+  .features__item-info {
+    width: 478px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 6.4rem 0;
+  }
+
+  .site-logo {
+    margin-right: 4.8rem;
+  }
+
+  .site-logo__image {
+    width: 128px;
+    height: 32px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .header {
+    padding: 4.8rem 0;
+  }
+
+  .header__toggle-btn {
+    display: block;
+  }
+
+  .header__inner-wrapper {
+    background-color: var(--secondary-Police-Blue);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 255px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5.6rem 2.6rem 0 4.8rem;
+    background-image: url(../images/svg/hidden-nav-bg.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    transform: translateX(100%);
+    transition: 03s ease;
+  }
+
+  .header__inner-wrapper .show-nav {
+    transform: translateX(0%);
+  }
+
+  .header__inner-wrapper-btn {
+    display: block;
+  }
+
+  .sitenav__list {
+    flex-direction: column;
+  }
+
+  .sitenav__item:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+
+  .sitenav__item:last-child {
+    margin-bottom: 3.6rem;
+  }
+
+  .features {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
+    background-color: var(--secondary-Sacramento-State-Green);
+    background-image: url(../images/svg/features-bottom-bg.svg);
+    background-position: top right -100px;
+    background-repeat: no-repeat;
+  }
+
+  .features__info {
+    padding-left: 2.4rem;
+  }
+
+  .features__title {
+    width: 240px;
+    font-size: 3.2rem;
+    line-height: 1;
+  }
+
+  .features__image {
+    margin-left: 187px;
+  }
+
+  .features__items {
+    text-align: center;
+  }
+
+  .features__item {
+    flex-direction: column;
+  }
+
+  .features__description {
+    margin-left: 60px;
+    width: 327px;
+    font-size: var(--main-font-size-2);
+    line-height: var(--main-line-height-2);
+  }
+}
+
+@media screen and (max-width: 397px) {
+  :root {
+    --h1-small-size: 4.8rem;
+    --h1-small-line: 1;
+  }
+
+  .container {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+
+  .hero {
+    padding-top: 3.2rem;
+    padding-bottom: 19.7rem;
+  }
+
+  .hero__title-wrapper {
+  }
+
+  .hero__description {
+    font-size: var(--main-font-size-2);
+    line-height: var(--main-line-height-2);
+  }
+}
