@@ -1,0 +1,527 @@
+/* CUSTOM CSS */
+:root {
+  /* COLORS */
+  --primary-light-coral-color: #f67e7e;
+  --primary-midnight-green: #014e56;
+  --primary-white-color: #ffffff;
+
+  --secondary-Rapture-Blue: #79c8c7;
+  --secondary-Police-Blue: #2c6269;
+  --secondary-Deep-Jungle-Green: #004047;
+  --secondary-Sacramento-State-Green: #012f34;
+  --secondary-Dark-Green: #002529;
+
+  /* FONTS */
+  --main-font-family: "Livvic", "Arial", sans-serif;
+
+  /* FONT-SIZE */
+  --h1-large-size: 10rem;
+  --h1-large-line: 1;
+
+  --h1-small-size: 6.4rem;
+  --h1-small-line: 0.88;
+
+  --h2-size: 4.8rem;
+  --h2-line: 1;
+
+  --h3-size: 1.8rem;
+  --h3-line: 1.56;
+
+  --main-font-size-1: 1.8rem;
+  --main-line-height-1: 1.56;
+
+  --main-font-size-2: 1.5rem;
+  --main-line-height-2: 1.67;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: 2px dotted var(--primary-light-coral-color);
+  outline-offset: 4px;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  font-size: 62.5%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: var(--main-font-family);
+  font-size: var(--main-font-size-2);
+  line-height: var(--main-line-height-2);
+  background-color: var(--primary-midnight-green);
+  color: var(--primary-white-color);
+  font-weight: 600;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-primary {
+  color: var(--primary-light-coral-color);
+}
+
+.btn {
+  padding: 0.9rem 3.3rem 1.1rem 3.2rem;
+  border: 2px solid transparent;
+  border-radius: 24px;
+  font-size: var(--main-font-size-1);
+  line-height: normal;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn-light {
+  color: var(--primary-white-color);
+  border-color: var(--primary-white-color);
+}
+
+.btn-light:hover {
+  background-color: var(--primary-white-color);
+  color: var(--secondary-Dark-Green);
+}
+
+/* main */
+
+.main__nav-top {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  background-image: url(../../images/svg/main-nav-bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right -100px;
+}
+
+.main__nav-top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__nav-bold-text {
+  font-family: "Livvic";
+  font-size: var(--h1-small-size);
+  font-weight: 700;
+  line-height: var(--h1-small-line);
+}
+
+.main__nav-line-smol {
+  width: 50px;
+  height: 4px;
+  background-color: var(--primary-light-coral-color);
+  border-color: var(--primary-light-coral-color);
+}
+
+.main__nav-two-smol-text {
+  padding-top: 4rem;
+  width: 730px;
+  font-family: "Livvic";
+  font-size: var(--main-font-size-1);
+  font-weight: 600;
+  line-height: var(--main-line-height-1);
+}
+
+/* MAIN CENTER START */
+
+.main__center-container {
+  background-color: var(--secondary-Deep-Jungle-Green);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../../images/svg/about-center-bg.svg),
+    url(../../images/svg/about-bottom-right-bg.svg);
+  background-repeat: no-repeat;
+  background-position: top left -100px, right bottom;
+}
+
+.main__center-directors {
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+}
+
+.main__center-text {
+  font-family: "Livvic";
+  font-size: var(--h2-size);
+  font-weight: 700;
+  line-height: var(--h2-line);
+  text-align: center;
+}
+
+.main__center-ceo {
+  display: flex;
+  gap: 30px;
+}
+
+.main__center-meet-ceo-wrapper {
+  margin-top: 6.4rem;
+  width: 350px;
+  align-items: center;
+  background-color: var(--secondary-Sacramento-State-Green);
+  padding-top: 3.2rem;
+  padding-bottom: 5.6rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__center-img {
+  width: 96px;
+  height: 96px;
+  align-items: center;
+}
+
+.main__center-green-text {
+  padding-top: 1.6rem;
+  font-family: "Livvic";
+  font-size: var(--main-font-size-1);
+  font-weight: 700;
+  line-height: var(--main-line-height-1);
+  text-align: center;
+  color: var(--secondary-Rapture-Blue);
+}
+
+.main__center-ceo-text {
+  font-family: "Livvic";
+  font-size: var(--main-font-size-2);
+  font-style: italic;
+  font-weight: 500;
+  line-height: var(--main-line-height-2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 2.8rem;
+}
+
+.main__center-ceo-texts {
+  padding-top: 8px;
+  font-family: "Livvic";
+  width: 254px;
+  font-size: var(--main-font-size-2);
+  font-style: italic;
+  font-weight: 500;
+  line-height: var(--main-line-height-2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer__wrapper-icons-line {
+  margin-right: 150px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  margin-bottom: 5.1rem;
+}
+
+.item::before {
+  font-family: "Font Awesome 5 Brands";
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+}
+
+.item:hover::before {
+  transition: 0.3s;
+  color: var(--primary-light-coral-color);
+}
+
+.twitter::before {
+  content: "\f099";
+}
+.facebook::before {
+  content: "\f08c";
+}
+
+.main__center-button {
+  margin-bottom: -80px;
+  font-size: 42px;
+  border-radius: 50%;
+  height: 56px;
+  width: 56px;
+  padding-bottom: 5px;
+  border: 2px solid var(--secondary-Sacramento-State-Green);
+  background-color: var(--primary-light-coral-color);
+}
+
+.main__center-button:hover {
+  background-color: var(--secondary-Rapture-Blue);
+}
+/* MAIN CENTER END */
+
+/* MAIN BOTTOM SECTION START */
+
+.main__bottom-section {
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+  background-image: url(../../images/svg/main-bottom-section-bg.svg);
+  background-repeat: no-repeat;
+  background-color: var(--secondary-Sacramento-State-Green);
+}
+
+.main__bottom-section-text {
+  font-family: "Livvic";
+  font-size: var(--h2-size);
+  font-weight: 700;
+  line-height: var(--h2-line);
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.main__bottom-section-wrapper-img {
+  margin-top: 6.4rem;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-bottom-img {
+  width: 180px;
+}
+
+/* MAIN BOTTOM SECTION END */
+
+.footer__wrapper-container {
+  background-color: var(--secondary-Dark-Green);
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 993px) {
+  .main__nav-top {
+    padding-top: 11.2rem;
+    padding-bottom: 11.2rem;
+    background-image: url(../../images/svg/main-nav-bg.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right -100px;
+  }
+
+  .main__nav-top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main__nav-bold-text {
+    font-family: "Livvic";
+    font-size: var(--h1-small-size);
+    font-weight: 700;
+    line-height: var(--h1-small-line);
+  }
+
+  .main__nav-line-smol {
+    display: none;
+  }
+
+  .main__nav-two-smol-text {
+    padding-top: 2.4rem;
+    width: 457px;
+    font-family: "Livvic";
+    font-size: var(--main-font-size-2);
+    font-weight: 600;
+    line-height: var(--main-line-height-2);
+    text-align: center;
+  }
+
+  /* main center start */
+
+  .main__center-text {
+    font-family: "Livvic";
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1em;
+    text-align: center;
+  }
+  /* main center end */
+
+  .main__bottom-section {
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+    background-image: url(../../images/svg/main-bottom-section-bg.svg);
+    background-repeat: no-repeat;
+    background-position: left top -100px;
+    background-color: var(--secondary-Sacramento-State-Green);
+  }
+
+  .main__bottom-section-text {
+    font-size: 3.2rem;
+    line-height: 1em;
+  }
+
+  .main__bottom-section-wrapper-img {
+    gap: 40px;
+  }
+
+  .about-bottom-img {
+    width: 103px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main__center-directors {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main__center-ceo {
+    flex-direction: column;
+  }
+
+  .main__center-meet-ceo-wrapper {
+    width: 600px;
+  }
+
+  .main__center-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .main__center-green-text {
+    font-size: 36px;
+  }
+
+  .main__center-ceo-text {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .main__nav-top {
+    padding-top: 11.2rem;
+    padding-bottom: 11.2rem;
+    background-image: url(../../images/svg/main-nav-bg.svg);
+    background-repeat: no-repeat;
+    background-position: bottom -100px right -100px;
+  }
+
+  .main__nav-top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main__nav-bold-text {
+    font-family: "Livvic";
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1em;
+  }
+
+  .main__nav-line-smol {
+    display: none;
+  }
+
+  .main__nav-two-smol-text {
+    padding-top: 1.6rem;
+    width: 327px;
+    font-family: "Livvic";
+    font-size: var(--main-font-size-2);
+    font-weight: 600;
+    line-height: var(--main-line-height-2);
+    text-align: center;
+  }
+
+  /*  */
+  .main__center-directors {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main__center-ceo {
+    flex-direction: column;
+  }
+
+  .main__center-meet-ceo-wrapper {
+    width: 327px;
+  }
+
+  .main__center-img {
+    width: 96px;
+    height: 96px;
+  }
+
+  .footer__wrapper-icons-line {
+    margin-left: 80px;
+  }
+
+  /* MAIN BOTTOM SECTION START */
+
+  .main__bottom-section {
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+    background-image: url(../../images/svg/main-bottom-section-bg.svg);
+    background-repeat: no-repeat;
+    background-position: left -100px top -100px;
+    background-color: var(--secondary-Sacramento-State-Green);
+  }
+
+  .main__bottom-section-text {
+    font-size: 3.2rem;
+    line-height: 1em;
+  }
+
+  .main__bottom-section-wrapper-img {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-bottom-img {
+    width: 146px;
+  }
+
+  .about-bottom-img:not(:last-child) {
+    padding-bottom: 50px;
+  }
+
+  /* MAIN BOTTOM SECTION END */
+}

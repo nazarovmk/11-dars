@@ -1,7 +1,7 @@
 const headerToggleBtn = document.querySelector(".header__toggle-btn");
 const headerInnerWrapper = document.querySelector(".header__inner-wrapper");
 const headerInnerWrapperBtn = document.querySelector(
-  ".header__inner-wrapper-btn",
+  ".header__inner-wrapper-btn"
 );
 
 headerToggleBtn.addEventListener("click", () => {
@@ -11,3 +11,5 @@ headerToggleBtn.addEventListener("click", () => {
 headerInnerWrapperBtn.addEventListener("click", () => {
   headerInnerWrapper.classList.remove("show-nav");
 });
+
+console.log(headerToggleBtn, headerInnerWrapperBtn, headerInnerWrapper);

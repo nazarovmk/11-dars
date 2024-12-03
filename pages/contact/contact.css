@@ -1,0 +1,236 @@
+:root {
+  /* COLORS */
+  --primary-light-coral-color: #f67e7e;
+  --primary-midnight-green: #014e56;
+  --primary-white-color: #ffffff;
+
+  --secondary-Rapture-Blue: #79c8c7;
+  --secondary-Police-Blue: #2c6269;
+  --secondary-Deep-Jungle-Green: #004047;
+  --secondary-Sacramento-State-Green: #012f34;
+  --secondary-Dark-Green: #002529;
+
+  /* FONTS */
+  --main-font-family: "Livvic", "Arial", sans-serif;
+
+  /* FONT-SIZE */
+  --h1-large-size: 10rem;
+  --h1-large-line: 1;
+
+  --h1-small-size: 6.4rem;
+  --h1-small-line: 0.88;
+
+  --h2-size: 4.8rem;
+  --h2-line: 1;
+
+  --h3-size: 1.8rem;
+  --h3-line: 1.56;
+
+  --main-font-size-1: 1.8rem;
+  --main-line-height-1: 1.56;
+
+  --main-font-size-2: 1.5rem;
+  --main-line-height-2: 1.67;
+}
+
+.contact__top {
+  padding-top: 4.7rem;
+  background-image: url(../../images/svg/contact-bg.svg),
+    url(../../images/svg/contact-bottom-bg.svg);
+  background-repeat: no-repeat;
+  background-position: left -100px bottom 200px, right -100px bottom;
+}
+
+.contact__top-container {
+  display: flex;
+  gap: 30px;
+}
+
+.main__top-bold-text {
+  font-family: "Livvic";
+  font-size: var(--h1-small-size);
+  font-weight: 700;
+  line-height: var(--h1-small-line);
+}
+.main__top-light-text {
+  font-family: "Livvic";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  color: var(--primary-light-coral-color);
+  padding-top: 3.2rem;
+}
+
+.wrapper {
+  width: 540px;
+}
+
+.main__top-img-text {
+  font-family: "Livvic";
+  font-size: var(--main-font-size-1);
+  font-weight: 700;
+  line-height: var(--main-line-height-1);
+}
+
+.main__top-wrappers {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  margin-top: 3.2rem;
+}
+
+.main__top-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  margin-top: 0.8rem;
+}
+
+.main__top-img {
+  width: 72px;
+  height: 72px;
+}
+
+/* INPUT */
+
+.main__top-input {
+  width: 540px;
+  height: 42px;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid var(--primary-white-color);
+  padding-left: 1.4rem;
+  font-family: "Livvic";
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+  padding-bottom: 1.6rem;
+}
+
+.main__top-inputs {
+  margin-top: 2.4rem;
+  padding-bottom: 1.6rem;
+  width: 540px;
+  height: 42px;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid var(--primary-white-color);
+  padding-left: 1.4rem;
+  font-family: "Livvic";
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.main__top-inputs:last-child {
+  margin-top: 2.4rem;
+  padding-bottom: 5.8rem;
+  width: 540px;
+  height: 84px;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid var(--primary-white-color);
+  padding-left: 1.4rem;
+  font-family: "Livvic";
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.main__button {
+  margin-top: 2.4rem;
+  font-family: "Livvic";
+  font-size: var(--main-font-size-1);
+  font-weight: 600;
+  line-height: var(--main-line-height-1);
+  color: var(--secondary-Deep-Jungle-Green);
+  padding: 0.9rem 3.2rem 1.1rem 3.2rem;
+  border: 2px solid var(--primary-white-color);
+  border-radius: 2.4rem;
+  background-color: var(--primary-white-color);
+  transition: 0.3s;
+}
+
+.main__button:hover {
+  background-color: var(--secondary-Deep-Jungle-Green);
+  color: var(--primary-white-color);
+}
+
+.footer__wrapper-container {
+  background-color: var(--secondary-Dark-Green);
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 993px) {
+  .contact__top {
+    padding-top: 4.7rem;
+    background-image: url(../../images/svg/contact-bg.svg),
+      url(../../images/svg/contact-bottom-bg.svg);
+    background-repeat: no-repeat;
+    background-position: left -100px top 50px, right -100px bottom;
+  }
+
+  .main__top-img-text {
+    width: 232px;
+  }
+
+  .contact__top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main__top-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main__top-right {
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+  }
+
+  .main__top-input {
+    width: 540px;
+  }
+
+  .main__button {
+    margin-bottom: 8.8rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .contact__top {
+    padding-top: 4.7rem;
+    background-image: url(../../images/svg/contact-bottom-bg.svg);
+    background-repeat: no-repeat;
+    background-position: right -100px bottom -100px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main__top-right {
+    display: flex;
+    flex-direction: column;
+    width: 325px;
+  }
+
+  .main__top-input {
+    width: 325px;
+  }
+
+  .main__top-inputs {
+    width: 325px;
+  }
+
+  .main__button {
+    margin-bottom: 8.8rem;
+  }
+}
