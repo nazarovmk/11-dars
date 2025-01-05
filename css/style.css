@@ -89,6 +89,7 @@ body {
   background-color: var(--primary-midnight-green);
   color: var(--primary-white-color);
   font-weight: 600;
+  overflow-x: hidden;
 }
 
 .container {
@@ -895,9 +896,6 @@ body {
   .hero {
     padding-top: 3.2rem;
     padding-bottom: 19.7rem;
-  }
-
-  .hero__title-wrapper {
   }
 
   .hero__description {
