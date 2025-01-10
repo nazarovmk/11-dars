@@ -405,6 +405,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .bottom__nav-text {
   font-family: "Livvic";
   font-size: 48px;
